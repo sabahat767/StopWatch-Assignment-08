@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+    body{
+        background-image: url(images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .heading{
+        color:white;
+        text-shadow: 4px 4px 6px #000000;
+        text-align: center;
+        margin-top:12px;
+    }
+</style>
+<body>
+    <div><h1 class="heading">STOP WATCH</h1></div>
+    <div class="container mt-5 ">
+        <div class="card ml-auto mr-auto" style="width: 20rem;height: 25rem; background-image:url(images/back.jpg); background-size: cover; background-repeat: no-repeat; border-radius: 80px;">
+            <img class="card-img-top" src="images/stopwatch.jpg" alt="Card image cap"style="border-radius:50px">
+            <div class="card-body text-center text-white mt-3" >
+              <h2 class="title d-inline-block mr-2 ml-3" id="min">0</h2>
+              <h2 class="title d-inline-block mr-2 ml-3" id="sec">0</h2>
+              <h2 class="title d-inline-block mr-2 ml-3" id="msec">0</h2>
+
+             
+              <div class="mt-5 ">
+              <button type="button" class="btn btn-info mr-3 ml-4" id="start" onclick="disableButton(this),start()" ><i class="fa fa-play"></i></button>
+              <button type="button" class="btn btn-info mr-3 ml-4" id="stop"onclick="disableButton2(this),stop()"><i class="fa fa-pause"></i></button>
+              <button type="button" class="btn btn-info mr-3 ml-4" id="reset"onclick="disableButton3(this),reset()"><i class="fa fa-undo"></i></button>
+            </div>
+            </div>
+          </div>
+    </div>
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> Sabahat Sabir Khan</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
